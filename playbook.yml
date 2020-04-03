@@ -1,4 +1,8 @@
-
+- name: install python
+  hosts: all
+  become: yes
+  roles:
+    - python
 - name: install nginx
   hosts: all
   become: yes
